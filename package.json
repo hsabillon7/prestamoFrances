@@ -1,0 +1,26 @@
+{
+  "name": "prestamofrances",
+  "version": "1.0.0",
+  "description": "Calcula un préstamo en base al método francés",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsabillon7/prestamoFrances.git"
+  },
+  "keywords": [
+    "préstamo",
+    "node",
+    "express",
+    "handlebars"
+  ],
+  "author": "Héctor Sabillón",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hsabillon7/prestamoFrances/issues"
+  },
+  "homepage": "https://github.com/hsabillon7/prestamoFrances#readme"
+}
