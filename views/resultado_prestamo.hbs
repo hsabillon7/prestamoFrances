@@ -1,0 +1,26 @@
+<h1 class="mt-3">Tabla de retorno del préstamo</h1>
+
+{{#if cuotas}}
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Mes</th>
+      <th scope="col">Capital</th>
+      <th scope="col">Interés</th>
+      <th scope="col">Cuota (Capital + Interés)</th>
+      <th scope="col">Deuda pendiente</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each cuotas}}
+    <tr>
+      <th scope="row">{{mes}}</th>
+      <th scope="row">{{capitalAmortizar}}</th>
+      <th scope="row">{{interes}}</th>
+      <th scope="row">{{cuota}}</th>
+      <th scope="row">{{capital}}</th>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+{{/if}}
