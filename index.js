@@ -30,9 +30,9 @@ app.post("/prestamo", (req, res, next) => {
   // https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Destructuring_assignment
   const { monto, tasaInteres, periodo } = req.body;
 
-  calcularMetodoFrances(monto, tasaInteres, periodo);
+  const cuotas = calcularMetodoFrances(monto, tasaInteres, periodo);
 
-  res.send("Petición aceptada");
+  res.render("resultado_prestamo", { cuotas });
 });
 
 // Inicializar el servidor en un puerto en específico
